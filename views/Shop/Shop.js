@@ -84,7 +84,7 @@ export default class Shop extends React.Component {
                             imageStyle={{ borderRadius: 4 }}
                         >
                             <TouchableOpacity onPress={() => {this.props.navigation.navigate('ShopDetail',{ shop_code: this.state.shop[i].shop_code })}}>
-                                <View style={{ height: 58, padding: 8, backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+                                <View style={{ height: 58, padding: 8, backgroundColor: '#F5E39A' }}>
                                     <Text numberOfLines={1} style={styles.text_font}>{this.state.shop[i].shop_name}</Text>
                                     <Text numberOfLines={1} style={[ styles.text_font, { fontSize: 12, }]}>{this.state.shop[i].shop_description}</Text>
                                 </View>
@@ -107,7 +107,7 @@ export default class Shop extends React.Component {
                     </ImageBackground>
                 </Header>
                 <View style={{ padding: 12, }}>
-                    <View style={[{ height: 48, backgroundColor: '#474648', flexDirection: 'row', borderRadius: 25, elevation: 3, }]}>
+                    <View style={[{ height: 48, backgroundColor: '#F5E39A', flexDirection: 'row', borderRadius: 25, elevation: 3, }]}>
                         <TextInput style={[ styles.text_font, { flex: 1, paddingLeft: 18, }]}
                             placeholder="What are you looking for ?" 
                             placeholderTextColor="#979697"
@@ -134,6 +134,6 @@ const styles = StyleSheet.create({
 	text_font: {
 		fontFamily: 'Kanit-Regular',
         fontSize: 15,
-        color: '#f3f3f3',
+        color: 'black',
     },
 });
