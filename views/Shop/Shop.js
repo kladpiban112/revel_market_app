@@ -17,9 +17,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import NetworkFailed from '../../component/NetworkFailed';
 import NotFound from '../../component/NotFound';
 import Loading from '../../component/Loading';
-
 import GOBALS from '../../GOBALS';
-
 import ShopModel from '../../models/ShopModel'
 
 var shop_model = new ShopModel;
