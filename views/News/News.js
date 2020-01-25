@@ -99,8 +99,8 @@ export default class News extends React.Component {
         }
 
         return (
-            <Content style={{ backgroundColor: '#010001', }}>
-                <Header style={{ backgroundColor: '#010001' }}>
+            <Content style={{ backgroundColor: 'skyblue', }}>
+                <Header style={{ backgroundColor: 'skyblue' }}>
                     <ImageBackground 
                         resizeMode='cover' 
                         source={require('../../images/bghead.png')} 

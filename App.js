@@ -4,6 +4,7 @@ import {
 } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack'
 
+import { SplashScreen } from './views/SplashScreen'
 import { Login } from './views/Login/Login'
 import { Home } from './views/Home/Home'
 import { NewsDetail } from './views/News/NewsDetail'
@@ -27,7 +28,7 @@ const HomeNavigation = createStackNavigator({
               color: '#f3f3f3'
           },
           headerStyle: {
-              backgroundColor: '#010001',
+              backgroundColor: 'skyblue',
           },
       }
   },
@@ -43,7 +44,7 @@ const HomeNavigation = createStackNavigator({
               color: '#f3f3f3'
           },
           headerStyle: {
-              backgroundColor: '#010001',
+              backgroundColor: 'skyblue',
           },
       }
   },
@@ -52,6 +53,8 @@ const HomeNavigation = createStackNavigator({
 });
 
 const Navigation = createSwitchNavigator({
+  SplashScreen: SplashScreen,
+  Login: Login,
   Home: HomeNavigation,
 })
 
