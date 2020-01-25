@@ -12,7 +12,7 @@ export default class NetworkFailed extends React.Component {
         return ( 
             <View style={{ justifyContent: 'center', alignItems: 'center', marginTop: 24, }}>
                 <Icon name="alert-circle-outline" size={28} style={{ color: 'red', marginBottom: 10, }} />
-                <Text style={[ styles.text_font, ]}>Couldn't connect</Text>
+                <Text style={[ styles.text_font, ]}>Couldn't connect!</Text>
             </View>
         );
     }
